@@ -1,9 +1,40 @@
-[  {
+[
+  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "name": "Android-Kernel-Zuma",
+      "repo": "https://github.com/kerneltoast/android_kernel_google_zuma.git",
+      "branch": "15.0.0-sultan",
+      "device": "husky"
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
+      },
+      {
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "18",
+        "name": "clang"
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "AR": "",
+      "CC": "clang"
+    }
+  },
+  {
+    "kernelSource": {
+      "name": "Android-Kernel-Zuma-KernelSU",
+      "repo": "https://github.com/kerneltoast/android_kernel_google_zuma.git",
+      "branch": "15.0.0-sultan",
+      "device": "husky"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -14,7 +45,7 @@
       },
       {
         "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "11",
+        "branch": "18",
         "name": "clang"
       }
     ],
