@@ -4,7 +4,7 @@
       "name": "Android-Kernel-Zuma",
       "repo": "https://github.com/kerneltoast/android_kernel_google_zuma.git",
       "branch": "15.0.0-sultan",
-      "device": "husky"
+      "device": "zuma"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -34,7 +34,7 @@
       "name": "Android-Kernel-Zuma-KernelSU",
       "repo": "https://github.com/kerneltoast/android_kernel_google_zuma.git",
       "branch": "15.0.0-sultan",
-      "device": "husky"
+      "device": "zuma"
     },
     "withKernelSU": true,
     "toolchains": [
